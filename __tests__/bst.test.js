@@ -108,6 +108,10 @@ describe('binarySearchTree', () => {
 
   test('it should return true if the tree includes 5', () => {
     expect(pbst.search(5)).toEqual(true);
-  })
+  });
+
+  test('it should return false if the node does not exist in the tree', () => {
+    expect(pbst.remove(8)).toEqual(false);
+  });
 
 });
